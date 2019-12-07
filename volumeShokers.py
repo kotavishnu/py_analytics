@@ -37,7 +37,7 @@ def send_email(user, pwd, recipient, subject, body) :
         print ("failed to send mail")
 
 try:
-    send_email('eloksolution@gmail.com', 'OSHO$321', 'kota.vishnu@gmail.com', 'Volume STOCKS Started', '')
+    send_email('xxxxx', 'xxxx', 'xxxxxx', 'Volume STOCKS Started', '')
     while (1):
         now = datetime.datetime.now()
         min=now.minute
@@ -74,10 +74,10 @@ try:
                # msg=msg+'<TR><TD>'+majorkey['sym']+'</TD><TD>'+majorkey['ltp']+'</TD><TD>'+majorkey['netpr']+'</TD><TD>'+majorkey['turn_lkh']+'</TD><TD>'+majorkey['week2a']+'</TD><TD>'+str((vol/wavol))+'</TD></TR>'
                 stocks = stocks+ '\n' + majorkey['sym'] + '\t' + majorkey['ltp'] + '\t' + majorkey['netpr'] + '\t' + majorkey['turn_lkh'] + '\t' + majorkey['week2a'] + '\t' + str((vol / wavol)*100) + '\n'
         if(len(stocks)>0):
-            send_email('eloksolution@gmail.com', 'OSHO$321', 'kota.vishnu@gmail.com', 'Volume STOCKS', msg+stocks)
+            send_email('xxxxm', 'xxxx$xxx', 'xx.xx@xx.com', 'Volume STOCKS', msg+stocks)
         print("Waiting.....")
         time.sleep(600)
-        #send_mail('eloksolution@gmail.com', 'OSHO$321', msg)
+        #send_mail('xx@xx.com', 'xxx$x', msg)
 finally:
     print ("Before exit")
 
